@@ -1,19 +1,32 @@
-# Curriculo DEV 📄
+# 📝 Currículo Dev
 
-Este projeto tem o intuito de desenvolver um curriculo de desenvolvedor, aplicando conhecimento de HTML, CSS e responsividade.
+Este é um projeto de currículo online desenvolvido com **HTML** e **CSS**. Foi incrimentado a responsividade, utilizando:
 
-## 🚀 Tecnologias Utilizadas
+- 1024 - monitores 🖥️
+- 768 - smartphone 📱
 
-- HTML
-- CSS
+bash
+Copiar
 
-## 📂 Estrutura do Projeto
+## 🚀 Como visualizar o currículo?
 
-📁 curriculo-dev
-│── 📁 assets
-    │── 📁 fonts
-    │── 📁 imgs
-    │── 📁 style
-│── 📄 README.md
-│── 📄 index.html
+1. Baixe ou clone este repositório:
+   ```sh
+   git clone https://github.com/amilka-lilian/curriculo-dev.git
+Abra o arquivo index.html no seu navegador.
+
+## 🛠 Tecnologias Utilizadas
+- HTML5 🏗️ - Estrutura da página
+- CSS3 🎨 - Estilização
+
+## 📌 Melhorias Futuras
+- Animações CSS 💫
+- Implementação com JavaScript 🚀
+
+## 📝 Licença
+Este projeto está sob a licença MIT.
+
+📷 Preview
+![Curriculo Preview](https://github.com/amilka-lilian/curriculo-dev/blob/main/assets/img/preview.png)
+ 
 
