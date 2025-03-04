@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto/Roboto-Thin.ttf");
+    font-size: 100;
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+    font-size: 300;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+    font-size: 500;
+}
+
+@font-face {
+    font-family: "Garamond-Regular";
+    src: url("../fonts/Garamond/EBGaramond-Regular.ttf");
+    font-size: 100;
+}
+
+@font-face {
+    font-family: "Garamond-Medium";
+    src: url("../fonts/Garamond/EBGaramond-Medium.ttf");
+    font-size: 300;
+}
+
+@font-face {
+    font-family: "Garamond-Bold";
+    src: url("../fonts/Garamond/EBGaramond-Bold.ttf");
+    font-size: 500;
+}

@@ -1,0 +1,250 @@
+/* Fundo cinza para a página inteira */
+body {
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page {
+    width: 50cm;
+    max-width: 100%;
+    height: auto;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade: telas menores */
+@media screen and (max-width: 1024px) {
+    .page {
+        width: 90%; /* Ajusta a largura para caber na tela */
+        height: auto; /* Permite altura dinâmica */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        width: 95%; /* Ocupa quase toda a tela */
+        box-shadow: none; /* Remove a sombra para melhor visualização */
+    }
+
+    .container {
+        flex-direction: column; /* Muda para uma única coluna */
+    }
+
+    .leftPanel, .rightPanel {
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    .img {
+        width: 3cm; /* Reduz o tamanho da imagem */
+        height: 3cm;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.rightPanel {
+    width: 25%;
+    background: linear-gradient(red, purple, blue);
+    padding: 0.7cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    margin-right: 18px;
+}
+
+.leftPanel {
+    width: 75%;
+    padding: 0.7cm;
+}
+
+h2 {
+    font-family: "Roboto-Medium", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.img {
+    width: 5cm;
+    height: 5cm;
+    margin-bottom: 0.7cm;
+    border-radius: 50%;
+    border: 0.15cm solid white;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.bottomLineSeparator {
+    border-bottom: 0.05cm solid white;
+}
+
+.details, .skills, .education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5cm;
+}
+
+
+.rightPanel .smallText,
+.smallText {
+    font-size: 0.5cm;
+    margin-bottom: 0.02cm;
+}
+
+.smallText {
+    font-family: "Roboto-Medium", sans-serif;
+    text-align: justify;
+    margin-bottom: 1cm;
+}
+
+.contactIcon {
+    width: 0.5cm;
+    text-align: center;
+}
+
+.rightPanel,
+.rightPanel a {
+    color: white;
+    text-decoration: none;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillIcon {
+    width: 0.5cm;
+    text-align: center;
+}
+
+.imgLogoAndText {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.9cm;
+    margin-bottom: 0.7cm;
+}
+
+.boldSize {
+    font-family: "Roboto-Bold", sans-serif;
+    text-align: justify;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+}
+
+.imgLogo {
+    width: 0.5cm;
+    margin-top: 0.1cm;
+    text-align: center;
+}
+
+/* Painel esquerdo */
+.name h1 {
+    font-family: "Garamond-Medium", sans-serif;
+    font-weight: 300;
+    font-size: 1.2cm;
+    transform: scale(1, 1.15);
+}
+
+.leftPanel .smallText p {
+    font-family: "Garamond-Regular", sans-serif;
+    font-size: 21px;
+    text-align: justify;
+    margin-bottom: 0.05cm;
+}
+
+.aboutMe h2 {
+    font-family: "Garamond-Medium", sans-serif;
+    font-size: 20px;
+    color: black;
+    transform: scale(1, 1.15);
+    margin-bottom: 1cm;
+}
+
+.aboutMe em {
+    background: linear-gradient(90deg, #1a2fee, #4c09b9);
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente */
+}
+
+
+.workExperience > ul > li ul {
+    padding-left: 0.5cm;
+    list-style-type: disc;
+}
+
+.workExperience > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.workExperience > ul > li {
+    position: relative;
+    padding-left: 1.2cm;
+}
+
+.workExperience > ul > li::before {
+    background-color: darkgray;
+    width: 0.05cm;
+    content: '';
+    position: absolute;
+    top: 0.2cm;
+    bottom: -1.2cm;
+    left: 0.05cm;
+}
+
+
+.workExperience > ul > li::after {
+    content: '';
+    position: absolute;
+    background-color: #484444; 
+    border-radius: 50%;
+    left: -0.1cm;
+    top: 0.2cm;
+    width: 0.35cm;
+    height: 0.35cm;
+}
+
+.aboutMe .smallText p,
+.aboutMe .smallText span,
+.aboutMe .smallText ul>li {
+    font-family: "Garamond-Regular", sans-serif;
+    text-align: justify;
+    margin-bottom: 0.1cm;
+}
+
+.jobPosition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobPosition span,
+.projectName span {
+    font-family: "Garamond-Regular", sans-serif;
+}
+
+.jobPosition .bolded,
+.jobPosition .bolded span {
+    font-size: 20px; /* Aumenta o tamanho da fonte para o texto dentro de .bolded */
+}
+
+.workExperience .projectName span {
+    font-family: "Garamond-Regular";
+    font-size: 20px; /* Aumenta o tamanho da fonte para o texto dentro de .projectNamebolded */
+}
+
